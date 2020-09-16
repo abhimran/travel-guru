@@ -1,0 +1,12 @@
+.rooms {
+  border-top: 1px solid #666464;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.map {
+  margin-left: 20px;
+  margin-top: 120px;
+}

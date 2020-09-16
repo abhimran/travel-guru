@@ -1,0 +1,65 @@
+.booking__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.booking__text h1 {
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.booking__text p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  width: 90%;
+}
+
+.booking__book {
+  margin-left: 20px;
+  padding: 10px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.booking__book input[type="text"] {
+  padding: 10px 10px;
+  outline: 0;
+  border: 0;
+  background: #f2f2f2;
+  font-size: 18px;
+}
+
+.booking__book button {
+  border: 0;
+  outline: 0;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #f9a51a;
+  cursor: pointer;
+}
+
+.dateTime {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.booking__book label {
+  margin: 10px 0;
+}
+
+.dateTime label {
+  display: block;
+  margin: 10px 0;
+}
+
+.bokking_to {
+  justify-self: end;
+}
