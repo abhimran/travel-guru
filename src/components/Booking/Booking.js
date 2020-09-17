@@ -49,8 +49,8 @@ const Booking = (props) => {
                   <DatePicker onChange={onChange1} value={value1} />
                 </div>
               </div>
-              <Link style={{textDecoration: 'none', width: "100%"}} to="/rooms">
-                <button>Start Booking</button>
+              <Link style={{textDecoration: 'none'}} to="/rooms">
+                <button className="btn">Start Booking</button>
               </Link>
             </div>
           </div>

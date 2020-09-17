@@ -34,6 +34,8 @@
   border: 0;
   background: #f2f2f2;
   font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .booking__book button {
@@ -43,6 +45,10 @@
   font-size: 18px;
   background-color: #f9a51a;
   cursor: pointer;
+}
+
+.booking__book .btn {
+  width: 100%;
 }
 
 .dateTime {

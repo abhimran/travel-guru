@@ -43,7 +43,7 @@ const Header = () => {
                         </>
                     ):(
                         <>
-                           <button onClick={signOut}>{(loggedInUser.isSignin) === true ? 'Logout': 'Login'}{loggedInUser.displayName}{loggedInUser.name}</button>
+                           <button onClick={signOut}>{(user.isSignin) === false ? 'Login': 'Logout'}{loggedInUser.displayName}{loggedInUser.name}</button>
                         </>
                     ))
                 }

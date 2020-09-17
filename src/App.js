@@ -6,6 +6,7 @@ import Booking from './components/Booking/Booking';
 import Rooms from './components/Rooms/Rooms';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import NoMatch from './components/NoMatch/NoMatch';
 
 export const nameContex = createContext();
 
@@ -40,6 +41,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
              <Login></Login>
+            </Route>
+            <Route path="*">
+             <NoMatch></NoMatch>
             </Route>
           </Switch>
         </Router>

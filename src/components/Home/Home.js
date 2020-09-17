@@ -31,7 +31,7 @@ const Home = () => {
                 <div className="main">
                     <div className="main__text">
                         <h1>{name}</h1>
-                        <p>Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach, and it ...</p>
+                        <p>{name} is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach, and it ...</p>
 
                         <Link to="/booking" style={{textDecoration: 'none'}}>
                            <button>Booking</button>

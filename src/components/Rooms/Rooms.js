@@ -36,7 +36,6 @@ const Rooms = () => {
         <RoomHeader></RoomHeader>
         <div className="rooms">
           <div className="room-info">
-            <p>Date: </p>
             <h3>Stay In {name}</h3>
             <div className="bed-rooms">
               {samePlace.map((room) => (

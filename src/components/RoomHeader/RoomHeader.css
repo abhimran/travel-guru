@@ -37,6 +37,6 @@
 .Room__header_login button:hover {
     border: 1px solid #F9A51A;
     background-color: transparent;
-    color: #fff;
+    color: #000;
 
 }

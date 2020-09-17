@@ -14,6 +14,8 @@ const RoomHeader = () => {
         setLoggedInUser(res);
       })
   }
+    // console.log();
+  
     return (
         <div className="Room__header">
             < div className = "Room__header_logo" >
@@ -40,7 +42,7 @@ const RoomHeader = () => {
                         </>
                     ):(
                        <>
-                        <button onClick={signOut}>{(loggedInUser.isSignin) === true ? 'Logout': 'Login'}{loggedInUser.displayName}{loggedInUser.name}</button>
+                        <button onClick={signOut}>{(user.isSignin) === false ? 'Login': 'Logout'}{loggedInUser.displayName}{loggedInUser.name}</button>
                         </>
                     ))
                 }
