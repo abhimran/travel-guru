@@ -1,6 +1,5 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import './Home.css'
-import logo from '../../images/logo.svg'
 import sajek from '../../images/image/Sajek.png'
 import sreemangol from '../../images/image/Sreemongol.png'
 import sundorbon from '../../images/image/sundorbon.png'
@@ -11,11 +10,6 @@ import {nameContex} from '../../App'
 
 
 const Home = () => {
-    // const [state, setState] = useState("cox's bazar");
-    // const handleClick = (name) =>{
-    //     setState(name);
-    // }
-
     const [name, setname, handleClick] = useContext(nameContex);
     
     const homeBackground = {
@@ -34,25 +28,6 @@ const Home = () => {
         <div className="main__home" style={homeBackground}>
             <div className="home__container">
                 <Header></Header>
-                {/* <div className="header">
-                    <div className="header__logo">
-                        <img src={logo} alt=""/>
-                    </div>
-                    <div className="header__searchbox">
-                        <input type="text" placeholder="Search your destination..........."/>
-                    </div>
-                    <div className="header__menu">
-                        <ul>
-                            <li>News</li>
-                            <li>Destination</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div className="header__login">
-                        <button>Login</button>
-                    </div>
-                </div> */}
                 <div className="main">
                     <div className="main__text">
                         <h1>{name}</h1>
