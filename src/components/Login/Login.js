@@ -9,15 +9,6 @@ import './Login.css'
 initilizeLoginFramework();
 
 function Login() {
-  // const [user, setUser] = useState({
-  //   isSignin: false,
-  //   name: '',
-  //   email: '',
-  //   photo: '',
-  //   password: '',
-  //   error: '',
-  //   success: false,
-  // })
   const [error, setError] = useState({
     email: '',
     password: ''
@@ -47,15 +38,6 @@ function Login() {
         history.replace(from);
       })
   }
-
-  // const signOut = () =>{
-  //     handleSignOut()
-  //     .then(res=>{
-  //       setUser(res);
-  //       setLoggedInUser(res);
-  //     })
-  // }
-
   const handleOnBlur = (e)=> {
     let isFormValid = true;
     if (e.target.name === 'email'){
@@ -194,26 +176,6 @@ function Login() {
         <button onClick={fbSignIn}> Sign in with Facebook</button>
       </div>
      </div>
-{/*     
-       {     
-       user.isSignin ? <button onClick={signOut}>Sign out</button> : 
-       <button onClick={googleSignIn}>Sign In With Google</button>
-      }
-     <input type="checkbox" onChange={()=>setNewUser(!newUser)} name="newUser" id=""/> Sign Up
-     <form onSubmit={handleSubmit}>
-       {
-         newUser && <input type="text" name="name" onChange={handleOnBlur} placeholder="Name"/>
-       }
-        
-        <br/>
-        <input type="email" name="email" onChange={handleOnBlur} required placeholder="Email"/> <br/>
-        <p>{error.email}</p>
-        <p>{user.error}</p>
-        <input type="password" name="password" onChange={handleOnBlur} required placeholder="Password" /> <br/>
-        <p>{error.password}</p>
-        <input type="submit" value="Sign Up" />
-     </form>
-      {user.success && <p>User {newUser ? 'Created' : 'Loggin'} Success! </p>} */}
    </div>
   );
 }

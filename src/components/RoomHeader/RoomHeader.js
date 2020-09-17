@@ -14,8 +14,6 @@ const RoomHeader = () => {
         setLoggedInUser(res);
       })
   }
-    // console.log();
-  
     return (
         <div className="Room__header">
             < div className = "Room__header_logo" >
