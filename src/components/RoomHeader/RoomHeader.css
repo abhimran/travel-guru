@@ -40,3 +40,22 @@
     color: #000;
 
 }
+
+/* Responsive */
+@media only screen and (max-width: 575px) {
+    .Room__header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px;
+        justify-items: start;
+        padding: 20px 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .Room__header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px;
+        justify-items: start;
+        padding: 20px 20px;
+    }
+}

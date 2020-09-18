@@ -69,3 +69,81 @@
 .bokking_to {
   justify-self: end;
 }
+
+/* Responsive */
+@media only screen and (max-width: 575px) {
+  .booking__main {
+    grid-template-columns: 1fr;
+  }
+
+  .booking__text h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .booking__text p {
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .booking__book {
+    width: 90%;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .booking__main {
+    grid-template-columns: 1fr;
+  }
+
+  .booking__text h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .booking__text p {
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .booking__book {
+    width: 90%;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .booking__main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking__text h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .booking__text p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .booking__book {
+    width: 90%;
+  }
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .booking__main {
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .booking__text p {
+    padding: 20px 0;
+  }
+}

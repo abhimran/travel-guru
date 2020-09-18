@@ -44,7 +44,7 @@ const Rooms = () => {
             </div>
           </div>
           <div className="map">
-            <LoadScript googleMapsApiKey="">
+            <LoadScript googleMapsApiKey="AIzaSyDjIZvKexz2mOrZQnlEuTiNm_9798SoFss">
               <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}

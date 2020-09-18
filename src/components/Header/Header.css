@@ -51,3 +51,31 @@
     color: #fff;
 
 }
+
+/* Responsive */
+@media only screen and (max-width: 575px) {
+    .header {
+        grid-template-columns: 1fr;
+        background-color: rgba(68, 68, 68, 0.589);
+        grid-template-rows: 60px;
+        justify-items: start;
+        padding: 20px 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        background-color: rgba(68, 68, 68, 0.589);
+        grid-template-rows: 60px;
+        justify-items: center;
+        padding: 20px 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .header {
+        grid-template-columns: repeat(1fr, 4);
+        padding: 20px 20px;
+    }
+}
